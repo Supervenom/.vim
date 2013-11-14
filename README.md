@@ -1,4 +1,6 @@
 .Vim
 ====
 
-My .Vim directory
+ln -s ~/.vim/.vimrc ~/.vimrc
+
+per creare un link nella home
