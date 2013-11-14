@@ -14,6 +14,7 @@ syntax on
 "--------
 " color scheme
 set background=dark
+set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
 color distinguished
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -32,7 +33,6 @@ set nocompatible
 set nofoldenable                                                  " disable folding"
 set confirm                                                       " prompt when existing from an unsaved file
 set backspace=indent,eol,start                                    " More powerful backspacing
-set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
 set mouse=a                                                       " use mouse in all modes
 set report=0                                                      " always report number of lines changed                "
 set nowrap                                                        " dont wrap lines
@@ -71,6 +71,15 @@ let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
+set undodir=~/.vim/undodir
+set undofile
+
+" max changes that can be undone
+set undolevels=1000
+
+" max lines to save for undo on buffer reload
+set undoreload=10000
+
 "-----------------
 " Plugin settings
 "-----------------
@@ -107,6 +116,14 @@ hi Tb_VisibleChanged guifg=green ctermbg=252 ctermfg=white
 
 " easy-motion
 let g:EasyMotion_leader_key = '<Leader>'
+
+"syntastic
+let g:syntastic_mode_map = { 'mode': 'active',
+	\ 'active_filetypes': [],
+	\ 'passive_filetypes': [] }
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '!'
+let g:syntastic_check_on_open = 1
 
 " Tagbar
 let g:tagbar_left=1

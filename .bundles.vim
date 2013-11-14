@@ -41,7 +41,6 @@ Bundle 'nathanaelkane/vim-indent-guides'
 " IDE features
 "--------------
 Bundle 'scrooloose/nerdtree'
-Bundle 'humiaozuzu/TabBar'
 Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
@@ -55,6 +54,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 "-------------
 " Bundle 'humiaozuzu/fcitx-status'
 Bundle 'nvie/vim-togglemouse'
+Bundle 'dhazel/conque-term'
 
 "----------------------------------------
 " Syntax/Indent for language enhancement
