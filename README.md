@@ -3,4 +3,4 @@
 
 ln -s ~/.vim/.vimrc ~/.vimrc
 
-per creare un link nella home
+per creare un link nella home.
