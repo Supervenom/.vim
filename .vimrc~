@@ -71,6 +71,15 @@ let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
+set undodir=~/.vim/undodir
+set undofile
+
+" max changes that can be undone
+set undolevels=1000
+
+" max lines to save for undo on buffer reload
+set undoreload=10000
+
 "-----------------
 " Plugin settings
 "-----------------
